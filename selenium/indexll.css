@@ -1,0 +1,34 @@
+h1{
+    
+background-color: rgb(218, 210, 202)
+; color: blueviolet;
+font-family: cursive;
+}
+
+h2{
+    
+    background-color: rgb(207, 201, 190)
+    ; color: blueviolet;
+    font-size: 30px;
+    font-family: cursive;
+    }
+#p.principal{
+    color: brown;
+    font-size: 30px;
+    font-family: cursive;
+}
+body{
+    background-color: rgb(0, 26, 255);
+}
+
+li{
+    display: inline-block;
+    background-color: gray;
+    margin: px;  
+    padding: 10px;
+    font-weight: bold;
+}
+
+ul{
+    background-color: azure;
+}

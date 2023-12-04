@@ -1,0 +1,30 @@
+"""Hackeando anhanguera"""
+
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+import time
+
+"""options = webdriver.ChromeOptions()
+options.add_argument("--disable-web-security")"""
+navegador = webdriver.Chrome() #instancia um navegador
+
+try:
+    navegador.get("https://www.anhanguera.com/inscricao?utm_source=google&utm_medium=cpc&utm_term=anhanguera&utm_content=sch-l1_aedu_aon_institucional-exata_perf_inhouse_gads_texto_texto_exata_inscrever_texto_cpa&utm_campaign=google_semadserver_sch-l1_aedu_aon_institucional-exata_perf_inhouse_conversao_valor-cpa_inscrever_cpa&gad_source=1&gclid=EAIaIQobChMIkIbsnazlggMVKdHCBB2BKwZCEAAYASAAEgKJnfD_BwE&gclsrc=aw.ds")
+    time.sleep(2)
+
+    elemento = navegador.find_element(By.XPATH,'//*[@id="mainScroll"]/ul/li[5]' ) #Encontrar elemento pelo ID
+    time.sleep(5)
+    elemento = navegador.find_element(By.XPATH, '//*[@id="vueApp"]/footer/button') #Encontrar elemento pelo ID
+    time.sleep(2)
+    """elemento.send_keys("alexsandromacedo1313@gmail.com") # Digita um texto no campo selecionado
+    botao_entrar = navegador.find_element(By.CLASS_NAME, "VfPpkd-vQzf8d") # Aperta em próximo
+    elemento.send_keys(Keys.RETURN)
+    time.sleep(8)"""
+
+
+
+
+finally: #Fechar navegador
+
+    navegador.close
